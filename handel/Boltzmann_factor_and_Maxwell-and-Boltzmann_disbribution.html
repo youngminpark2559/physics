@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+      <style rel="stylesheet" type="text/css">
+body {
+ font-size: 23px;
+ 
+ margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding-left: 80px;
+    
+    line-height:35px;
+},
+img {
+ width:900px;
+}
+</style>
+      <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    "HTML-CSS" : {
+        availableFonts : ["STIX"],
+        preferredFont : "STIX",
+        webFont : "STIX-Web",
+        imageFont : null
+    }
+});
+</script>
+     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js" type="text/javascript">    
+    MathJax.Hub.Config({
+        HTML: ["input/TeX","output/HTML-CSS"],
+        TeX: { extensions: ["AMSmath.js","AMSsymbols.js"], 
+               equationNumbers: { autoNumber: "AMS" } },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: { inlineMath: [ ['$$$','$$$'] ],
+                   displayMath: [ ['$$$$','$$$$'] ],
+                   processEscapes: true },
+        "HTML-CSS": { availableFonts: ["TeX"],
+                      linebreaks: { automatic: true } }
+    });
+</script>
+   </HEAD>
+   <BODY>
+<xmp>
+Boltzmann factor and Maxwell-and-Boltzmann disbribution
+www.youtube.com/watch?v=mERpRoZeLpQ
+
+==================================================
+$$$S=k \ln\Omega$$$ 
+
+S is entropy 
+k is Boltzmann constant value 
+$$$\Omega$$$ is numeric which represents state of system 
+In other words, $$$\Omega$$$ is number of possible states which system can have 
+
+==================================================
+Above eqation is notation of Entropy in terms of statistics 
+
+==================================================
+When you think of Entropy in terms of thermodynamics 
+$$$S=\dfrac{Q}{T} $$$ 
+
+Q is heat energy 
+T is absolute temperature 
+
+==================================================
+You can write above ones without S 
+$$$k \ln\Omega = \dfrac{Q}{T}$$$ 
+
+Then, 
+$$$\Omega = e^{\frac{Q}{kT}}$$$ 
+
+In physics, $$$\dfrac{1}{kT}$$$ is notated by $$$\beta$$$ 
+$$$\dfrac{1}{kT}=\beta$$$ 
+
+==================================================
+From now on, to think of generalization 
+you'll consider Q as energy than heat energy 
+
+==================================================
+$$$\dfrac{C}{\Omega} = P$$$ 
+
+$$$\Omega$$$ is "all" possible number on state which system can have 
+C is "specific" number for energy 
+Then, it means probability P 
+
+Not clear 
+$$$\dfrac{C}{\Omega} = P = Ce^{-\beta E}$$$ 
+You'll just write $$$C$$$ as $$$\dfrac{1}{Z}$$$ 
+$$$= \dfrac{1}{Z} e^{-\beta E}$$$ 
+
+You know following characteristic of probability 
+$$$\sum P =1$$$ 
+
+==================================================
+From characteristic of probability, you can wrtie as 
+
+$$$\sum P = 1 = \dfrac{1}{Z} \sum e^{-\beta E} $$$
+
+==================================================
+$$$Z= \sum e^{-\beta E}$$$ 
+
+
+Z is called distributing function 
+$$$e^{-\beta E}$$$ is called Boltzmann factor 
+
+==================================================
+Maxwell-Boltzmann disbribution is velocity disbribution of molecules of air 
+
+Molecules of air will move in heat 
+
+Then, what's velocity distribution in that movement? 
+
+You can't measure velocity of all molecules of air 
+
+So, you need to use statistics 
+
+==================================================
+You will ignore interaction between molecules of air 
+which means you ignore potential energy of molecules of air 
+which means you only consider kinetic energy of molecules of air into equation 
+
+==================================================
+Kinetic energy as non-relative way is $$$\dfrac{1}{2}mv^2$$$ 
+
+Probability function with respect to velocity v is as following 
+
+$$$P(v) =
+\dfrac{1}{Z} e ^{-\frac{1}{2}\beta mv^2}$$$ 
+
+==================================================
+v can be written sum of square of v in each axis 
+$$$v^2 = v_x^2 +v_y^2 +v_z^2 $$$ 
+
+==================================================
+Image sphere in 3D space 
+% /home/young/Pictures/2019_02_13_14:26:16.png
+
+$$$dv_x dv_y dv_z = 4\pi v^2 dv$$$ 
+
+$$$dv_x$$$ is small v in x axis 
+
+==================================================
+$$$\bigintss_{-\infty}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{2} \lambda^{-\frac{3}{2}}$$$ 
+
+$$$x^2 e^{-\lambda x^2}$$$ is symmetric in y axis 
+so you can write 
+$$$\bigintss_{0}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{4} \lambda^{-\frac{3}{2}}$$$ 
+
+==================================================
+Apply above notation into kinetic energy 
+
+$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx $$$ 
+
+After perform intergration, you get following 
+$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx =
+4\pi A \times \dfrac{\sqrt{\pi}}{4}\left( \dfrac{\beta m}{2} \right)^{-\frac{3}{2}}$$$ 
+
+According to characteristic of probability,
+result should be 1 
+$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx 
+= 4\pi A \times \dfrac{\sqrt{\pi}}{4}\left( \dfrac{\beta m}{2} \right)^{-\frac{3}{2}} 
+= 1$$$ 
+
+==================================================
+If you delete 2 of 4, then 
+
+$$$\pi A \times \sqrt{\pi}\left( \dfrac{\beta m}{2} \right)^{-\frac{3}{2}} = 1$$$ 
+$$$A = \dfrac{1}{\pi \sqrt{\pi}} \left( \dfrac{\beta m}{2} \right)^{\frac{3}{2}}$$$ 
+
+You already know $$$\pi \sqrt{\pi} = \pi^{\frac{2}{3}}$$$ 
+
+$$$= \left( \dfrac{\beta m}{2\pi} \right)^{\frac{3}{2}}$$$ 
+
+Constance value A will be used for nomalization 
+
+==================================================
+In Maxwell-Boltzmann distribution, 
+velocity disbribution function will be 
+
+$$$\rho(v) = \left( \dfrac{\beta m}{2\pi} \right)^{\frac{3}{2}} 
+4\pi v^2 
+e^{-\frac{1}{2}\beta m v^2}$$$ 
+
+==================================================
+Since you have velocity disbribution function 
+you can get avaerga of velocity by performing intergration 
+
+In probablistic math, when you calculate average 
+you multiply variable by probability function 
+then sum them all 
+
+You use same way for this 
+
+$$$\big< v \big> =
+\bigintss_{0}^{\infty} v \times \rho(v) dv$$$ 
+
+$$$\big< v \big>$$$ is average of velocity 
+
+==================================================
+$$$k=\dfrac{R}{N_A}$$$ 
+$$$k$$$ is Boltzmann constant 
+$$$R$$$ is gas constant ($$$10^{23}$$$) 
+$$$N_A$$$ is avogadro number ($$$6.02$$$) 
+
+==================================================
+Let's just try this 
+$$$M=m\times N_A$$$ 
+
+==================================================
+And by using all of terms 
+after you perform intergration 
+you get average of velocity as follow 
+
+$$$\big<v\big> = \sqrt{\dfrac{8RT}{\pi M}}$$$ 
+
+==================================================
+$$$v_{rms}$$$ is root mean square of v? 
+
+
+$$$v_{rms} =
+\left( \bigintss_0^{-\infty} v^2 \rho(v) dv \right)^{\frac{1}{2}}$$$ 
+
+Then you finally get 
+$$$= \sqrt{\dfrac{3RT}{M}}$$$ 
+      
+</xmp>
+   </BODY>
+</HTML>
