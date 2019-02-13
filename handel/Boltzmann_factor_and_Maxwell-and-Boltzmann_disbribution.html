@@ -149,24 +149,24 @@ $$$dv_x dv_y dv_z = 4\pi v^2 dv$$$
 $$$dv_x$$$ is small v in x axis 
 
 ==================================================
-$$$\bigintss_{-\infty}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{2} \lambda^{-\frac{3}{2}}$$$ 
+$$$\int_{-\infty}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{2} \lambda^{-\frac{3}{2}}$$$ 
 
 $$$x^2 e^{-\lambda x^2}$$$ is symmetric in y axis 
 so you can write 
-$$$\bigintss_{0}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{4} \lambda^{-\frac{3}{2}}$$$ 
+$$$\int_{0}^{\infty} x^2 e^{-\lambda x^2} dx = \dfrac{\sqrt{\pi}}{4} \lambda^{-\frac{3}{2}}$$$ 
 
 ==================================================
 Apply above notation into kinetic energy 
 
-$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx $$$ 
+$$$\int_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx $$$ 
 
 After perform intergration, you get following 
-$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx =
+$$$\int_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx =
 4\pi A \times \dfrac{\sqrt{\pi}}{4}\left( \dfrac{\beta m}{2} \right)^{-\frac{3}{2}}$$$ 
 
 According to characteristic of probability,
 result should be 1 
-$$$\bigintss_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx 
+$$$\int_{0}^{\infty} Ae^{-\frac{1}{2}\beta mv^2} 4\pi v^2 dx 
 = 4\pi A \times \dfrac{\sqrt{\pi}}{4}\left( \dfrac{\beta m}{2} \right)^{-\frac{3}{2}} 
 = 1$$$ 
 
@@ -201,7 +201,7 @@ then sum them all
 You use same way for this 
 
 $$$\big< v \big> =
-\bigintss_{0}^{\infty} v \times \rho(v) dv$$$ 
+\int_{0}^{\infty} v \times \rho(v) dv$$$ 
 
 $$$\big< v \big>$$$ is average of velocity 
 
@@ -225,9 +225,8 @@ $$$\big<v\big> = \sqrt{\dfrac{8RT}{\pi M}}$$$
 ==================================================
 $$$v_{rms}$$$ is root mean square of v? 
 
-
 $$$v_{rms} =
-\left( \bigintss_0^{-\infty} v^2 \rho(v) dv \right)^{\frac{1}{2}}$$$ 
+\left( \int_0^{-\infty} v^2 \rho(v) dv \right)^{\frac{1}{2}}$$$ 
 
 Then you finally get 
 $$$= \sqrt{\dfrac{3RT}{M}}$$$ 
